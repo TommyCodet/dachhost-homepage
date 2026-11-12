@@ -25,7 +25,7 @@
     <div class="container nav">
       <a class="logo" href="/" aria-label="DachHost Startseite">DACH<span>HOST</span><i>.</i></a>
       <nav id="primaryNav" aria-label="Hauptnavigation">
-        <a href="/">Start</a><a href="/#vorteile">Vorteile</a><a href="docs.html" aria-current="page">Dokumentation</a>
+        <a href="/">Start</a><a href="/#vorteile">Vorteile</a><a href="vorlagen.html">Vorlagen</a><a href="docs.html" aria-current="page">Dokumentation</a>
         <a class="nav-cta" href="https://panel.dachhost.com">Zum Panel <span aria-hidden="true">↗</span></a>
       </nav>
       <div class="nav-tools">
@@ -39,15 +39,39 @@
     <h1>Dokumentation<span class="gradient-text">.</span></h1>
     <div class="content-panel">
       <h2>Willkommen bei DachHost</h2>
-      <p>Hier entsteht die Dokumentation für deinen DachHost-Server. Wir ergänzen Schritt-für-Schritt-Anleitungen zur Erstellung, Einrichtung und Verwaltung deines Servers.</p>
-      <div class="notice">Die Dokumentation wird aktuell aufgebaut. Wenn du Unterstützung benötigst, erreichst du uns bis dahin über unseren Discord-Server oder per E-Mail.</div>
-      <h2>Was dich hier erwartet</h2>
+      <p>In dieser Dokumentation findest du die ersten Schritte und praktische Hinweise zur Verwaltung deines Servers über das Pelican Panel.</p>
+      <div class="notice"><strong>Hinweis:</strong> Die Oberfläche und verfügbaren Funktionen können je nach Server-Vorlage und Berechtigungen variieren. Die aktuell verfügbaren Vorlagen werden direkt im Panel angezeigt.</div>
+      <h2>1. Deinen ersten Server erstellen</h2>
+      <ol>
+        <li>Melde dich im <a href="https://panel.dachhost.com">DachHost-Panel</a> an.</li>
+        <li>Öffne den Bereich zur Servererstellung, sofern er für deinen Account freigeschaltet ist.</li>
+        <li>Wähle eine verfügbare Server-Vorlage aus und lies die angezeigten Hinweise.</li>
+        <li>Trage die erforderlichen Angaben ein und prüfe die Ressourcen- und Portvorgaben.</li>
+        <li>Schließe die Erstellung ab und öffne anschließend die Server-Konsole.</li>
+      </ol>
+      <h2>2. Deinen Server verwalten</h2>
+      <h3>Starten, stoppen und neu starten</h3>
+      <p>Nutze die entsprechenden Aktionen im Panel. Warte nach dem Start, bis die Konsole den erfolgreichen Start meldet. Beende Prozesse möglichst über die Panel-Aktion statt den Server hart abzubrechen.</p>
+      <h3>Konsole und Logs</h3>
+      <p>Die Konsole zeigt Ausgaben und Fehlermeldungen des Serverprozesses. Wenn ein Start fehlschlägt, kopiere die letzten relevanten Zeilen für eine Support-Anfrage – aber veröffentliche keine Passwörter, Tokens oder privaten Zugangsdaten.</p>
+      <h3>Dateien und Konfiguration</h3>
+      <p>Ändere Konfigurationsdateien nur, wenn du weißt, welche Einstellung du anpassen möchtest. Erstelle vor größeren Änderungen eine Sicherung, sofern dir eine Backup-Funktion zur Verfügung steht.</p>
+      <h2>3. Häufige Probleme</h2>
+      <h3>Der Server startet nicht</h3>
       <ul>
-        <li>Erste Schritte und Servererstellung</li>
-        <li>Grundlagen des Pelican Panels</li>
-        <li>Konfiguration, Konsole und Dateiverwaltung</li>
-        <li>Häufige Fragen und Problemlösungen</li>
+        <li>Prüfe die letzten Zeilen in der Konsole.</li>
+        <li>Kontrolliere, ob erforderliche Einstellungen und Startparameter gesetzt sind.</li>
+        <li>Prüfe, ob die verwendete Vorlage und die ausgewählte Software zusammenpassen.</li>
+        <li>Wenn der Fehler bleibt, sende dem Support die Fehlermeldung und den Servertyp.</li>
       </ul>
+      <h3>Der Server ist nicht erreichbar</h3>
+      <ul>
+        <li>Prüfe im Panel, ob der Server tatsächlich läuft.</li>
+        <li>Kontrolliere die angezeigte Adresse und den Port.</li>
+        <li>Beachte, dass einzelne Spiele zusätzliche Ports oder Protokolle benötigen können.</li>
+      </ul>
+      <h2>4. Vorlagen finden</h2>
+      <p>Die aktuelle Auswahl an Game- und Application-Vorlagen findest du im Panel. Unsere <a href="vorlagen.html">Vorlagen-Übersicht</a> erklärt, wie du die passende Vorlage findest. Wir zeigen bewusst keine vollständige Liste auf der Website, solange sie nicht automatisch mit dem tatsächlichen Angebot abgeglichen wird.</p>
       <h2>Du brauchst Hilfe?</h2>
       <p>Besuche unseren <a href="https://discord.gg/H95r4yZNXF" target="_blank" rel="noopener noreferrer">DachHost Discord</a> oder schreibe an <a href="mailto:support@dachhost.com">support@dachhost.com</a>.</p>
       <p><a href="https://panel.dachhost.com">Zum DachHost-Panel →</a></p>
