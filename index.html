@@ -1,9 +1,294 @@
 <!doctype html>
-<html lang="de" data-theme="auto"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111111"><meta name="description" content="Kostenloses Game-Server-Hosting von DachHost. Starte deinen eigenen Gameserver."><title>DachHost – Dein Server. Deine Welt.</title><link rel="canonical" href="https://www.dachhost.com/"><link rel="stylesheet" href="style.css"><script>(()=>{let t=localStorage.getItem('dachhost-theme');document.documentElement.dataset.theme=t==='light'||t==='dark'?t:'auto'})()</script></head>
-<body><header class="site-header"><div class="container nav"><a class="logo" href="/">DACH<span>HOST</span><i>.</i></a><nav><a href="#start">Start</a><a href="#angebote">Angebote</a><a href="docs.html">Dokumentation</a><a class="nav-cta" href="https://panel.dachhost.com">Zum Panel ↗</a></nav><button id="themeToggle" class="theme-toggle" aria-label="Farbschema wechseln">◐</button><button id="menuToggle" class="menu-toggle" aria-label="Menü öffnen">☰</button></div></header>
-<main><section class="hero container" id="start"><div><div class="eyebrow">✦ DEIN GAME-SERVER. DEIN ABENTEUER.</div><h1>Deine Welt.<br><span class="gradient-text">Deine Regeln.</span></h1><p class="lead">Starte deinen eigenen Gameserver – unkompliziert, kostenlos und ohne Kreditkarte. Du kümmerst dich ums Spielen. Wir um die Infrastruktur.</p><div class="actions"><a class="button primary" href="https://panel.dachhost.com">Kostenlos starten →</a><a class="button secondary" href="#angebote">Angebote entdecken</a></div><p class="note">✓ Kostenloser Einstieg <b>·</b> Ein Account pro Person</p></div><div class="hero-art"><div class="orbit"></div><div class="server-card"><div class="server-top">● ● ● <span>SERVER STATUS　 <b>● READY</b></span></div><div class="server-mark">DH<span>.</span></div><strong>YOUR NEXT WORLD</strong><small>powered by DachHost</small><div class="bars">▂ ▅ ▃ ▇ ▄ ▆ ▃ ▇ ▅ ▄ ▆ ▃</div><div class="server-bottom">INFRASTRUCTURE <b>ONLINE</b></div></div><div class="float-tag">✦ FREE HOSTING</div></div></section>
-<section class="trust"><div class="container trust-inner"><span>GEMACHT FÜR DEINE COMMUNITY</span><b>GAME SERVER</b><i>✦</i><b>MODS & PLUGINS</b><i>✦</i><b>DEIN EIGENER SERVER</b></div></section>
-<section class="section container" id="angebote"><div class="section-heading"><div><div class="eyebrow">WAS DICH ERWARTET</div><h2>Dein Projekt. <span class="gradient-text">Dein Server.</span></h2></div><p>Alles, was du für deinen Einstieg ins eigene Hosting brauchst – an einem Ort.</p></div><div class="offer-grid"><article class="offer-card featured"><small>01 / GAME HOSTING</small><h3>Game Server</h3><p>Erstelle deinen eigenen Gameserver und spiele gemeinsam mit Freunden. Verschiedene Server-Software und Konfigurationen stehen bereit.</p><ul><li>Verschiedene Games & Servertypen</li><li>Mods und Plugins – je nach Software</li><li>Verwaltung über das Panel</li></ul><a href="https://panel.dachhost.com">Server erstellen →</a></article><article class="offer-card"><small>02 / CONTROL</small><h3>Einfach verwalten</h3><p>Behalte deine Instanz im Blick. Starte, stoppe und verwalte deinen Server zentral über das DachHost-Panel.</p><ul><li>Zentrale Serververwaltung</li><li>Konfiguration an einem Ort</li><li>Support über Discord</li></ul><a href="https://panel.dachhost.com">Zum Panel →</a></article><article class="offer-card"><small>03 / IN PLANUNG</small><h3>Docs & mehr</h3><p>Wir bauen DachHost weiter aus. In der Dokumentation findest du nach und nach Anleitungen und hilfreiche Informationen.</p><ul><li>Schritt-für-Schritt-Anleitungen</li><li>Tipps zur Serververwaltung</li><li>Weitere Funktionen geplant</li></ul><a href="docs.html">Dokumentation ansehen →</a></article></div><p class="fine-print">Das Angebot ist aktuell kostenlos und kann im Rahmen der verfügbaren Ressourcen angepasst werden. Verfügbarkeit und Funktionen können je nach Servertyp variieren.</p></section>
-<section class="cta"><div class="container cta-inner"><div><div class="eyebrow">BEREIT LOSZULEGEN?</div><h2>Dein nächstes Abenteuer<br><span class="gradient-text">beginnt hier.</span></h2></div><a class="button primary" href="https://panel.dachhost.com">Jetzt kostenlos starten →</a></div></section></main>
-<footer class="footer"><div class="container footer-main"><div><a class="logo" href="/">DACH<span>HOST</span><i>.</i></a><p>Dein Server. Deine Welt.<br>Game-Server-Hosting für deine Ideen.</p></div><div class="footer-links"><div><b>PLATTFORM</b><a href="https://panel.dachhost.com">Panel</a><a href="#angebote">Angebote</a><a href="docs.html">Dokumentation</a></div><div><b>COMMUNITY</b><a href="https://discord.gg/H95r4yZNXF">Discord</a><a href="mailto:support@dachhost.com">Support per E-Mail</a></div><div><b>INFORMATIONEN</b><a href="legal.html">Impressum & Datenschutz</a></div></div></div><div class="container footer-bottom">© 2026 DachHost. Mit Leidenschaft betrieben. <span>Made for your next world ✦</span></div></footer>
-<script>const r=document.documentElement,t=document.getElementById('themeToggle'),m=document.getElementById('menuToggle'),n=document.querySelector('.nav nav');t.onclick=()=>{let c=r.dataset.theme||'auto',v=c==='dark'?'light':c==='light'?'auto':'dark';r.dataset.theme=v;if(v==='auto')localStorage.removeItem('dachhost-theme');else localStorage.setItem('dachhost-theme',v)};m.onclick=()=>n.classList.toggle('open');</script></body></html>
+<html lang="de" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DachHost">
+  <meta name="twitter:card" content="summary">
+  <meta name="description" content="DachHost bietet kostenloses Game-Server-Hosting mit Pelican Panel und einer großen Auswahl an Server-Vorlagen.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DachHost – Dein Server. Deine Welt.">
+  <meta property="og:description" content="Starte deinen eigenen Game-Server – unkompliziert und kostenlos.">
+  <meta property="og:url" content="https://www.dachhost.com/">
+  <title>DachHost – Kostenloses Game-Server-Hosting</title>
+  <link rel="canonical" href="https://www.dachhost.com/">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "DachHost",
+    "url": "https://www.dachhost.com/",
+    "inLanguage": "de",
+    "description": "Kostenloses Game-Server-Hosting mit Verwaltung über das Pelican Panel."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ist DachHost wirklich kostenlos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, der Einstieg ist aktuell kostenlos. Das Angebot kann im Rahmen der verfügbaren Ressourcen angepasst werden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Games und Anwendungen werden unterstützt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Im Pelican Panel findest du die aktuell verfügbaren Server-Vorlagen. Die Auswahl kann sich im Laufe der Zeit ändern."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie verwalte ich meinen Server?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Verwaltung erfolgt über das DachHost-Panel auf Basis von Pelican."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wo stehen die Server?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die derzeitige Hosting-Infrastruktur von DachHost befindet sich in Deutschland."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wo bekomme ich Hilfe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Du erreichst DachHost über den Discord-Server oder per E-Mail an support@dachhost.com."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('dachhost-theme');
+        document.documentElement.dataset.theme = saved === 'light' || saved === 'dark' ? saved : 'auto';
+      } catch (_) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/" aria-label="DachHost Startseite">DACH<span>HOST</span><i>.</i></a>
+      <nav id="primaryNav" aria-label="Hauptnavigation">
+        <a href="#start">Start</a>
+        <a href="#vorteile">Vorteile</a>
+        <a href="#ablauf">So funktioniert's</a>
+        <a href="vorlagen.html">Vorlagen</a>
+        <a href="#faq">FAQ</a>
+        <a href="docs.html">Dokumentation</a>
+        <a class="nav-cta" href="https://panel.dachhost.com">Zum Panel <span aria-hidden="true">↗</span></a>
+      </nav>
+      <div class="nav-tools">
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Farbschema wechseln" title="Farbschema wechseln">◐</button>
+        <button id="menuToggle" class="menu-toggle" type="button" aria-label="Menü öffnen" aria-controls="primaryNav" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="start">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-mark">✦</span> DEIN PROJEKT. DEIN SERVER.</div>
+        <h1>Deine Welt.<br><span class="gradient-text">Deine Regeln.</span></h1>
+        <p class="lead">Starte deinen eigenen Game-Server – unkompliziert und kostenlos. Entdecke eine große Auswahl an Server-Vorlagen und verwalte dein Projekt zentral über das Pelican Panel.</p>
+        <div class="actions">
+          <a class="button primary" href="https://panel.dachhost.com">Kostenlos starten <span aria-hidden="true">→</span></a>
+          <a class="button secondary" href="#vorteile">DachHost entdecken</a>
+        </div>
+        <p class="note"><span aria-hidden="true">✓</span> Kostenloser Einstieg <b>·</b> Keine Kreditkarte erforderlich</p>
+      </div>
+      <div class="hero-art" aria-label="Dekorative Vorschau einer Serverkarte">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="server-card">
+          <div class="server-top"><span class="window-dots" aria-hidden="true">● ● ●</span><span>PELICAN PANEL <b>VORSCHAU</b></span></div>
+          <div class="server-mark">DH<span>.</span></div>
+          <strong>YOUR NEXT WORLD</strong>
+          <small>powered by DachHost</small>
+          <div class="server-metrics" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="server-bottom"><span>DEIN PROJEKT</span><b>READY WHEN YOU ARE</b></div>
+        </div>
+        <div class="float-tag"><span aria-hidden="true">✦</span> FREE HOSTING</div>
+        <div class="float-tag secondary-tag">POWERED BY PELICAN</div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="DachHost auf einen Blick">
+      <div class="container trust-inner">
+        <span>HOSTING FÜR DEINE IDEEN</span>
+        <b>GAME SERVER</b><i aria-hidden="true">✦</i>
+        <b>VIELE SERVER-VORLAGEN</b><i aria-hidden="true">✦</i>
+        <b>PELICAN PANEL</b><i aria-hidden="true">✦</i>
+        <b>STANDORT DEUTSCHLAND</b>
+      </div>
+    </section>
+
+    <section class="section container" id="vorteile">
+      <div class="section-heading">
+        <div><div class="eyebrow">WAS DICH ERWARTET</div><h2>Dein Projekt.<br><span class="gradient-text">Dein Server.</span></h2></div>
+        <p>Alles für deinen Einstieg ins eigene Serverprojekt – übersichtlich an einem Ort.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">✓</div>
+          <h3>Kostenlos starten</h3>
+          <p>Der Einstieg bei DachHost ist kostenlos. So kannst du dein Projekt ausprobieren, ohne direkt Geld auszugeben.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">▦</div>
+          <h3>Viele Möglichkeiten</h3>
+          <p>Entdecke eine große Auswahl an Game- und Application-Vorlagen. Welche Varianten verfügbar sind, siehst du im Panel.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">⌘</div>
+          <h3>Zentrale Verwaltung</h3>
+          <p>Verwalte deinen Server über das Pelican Panel und behalte wichtige Funktionen an einem Ort im Blick.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">⌖</div>
+          <h3>Standort Deutschland</h3>
+          <p>DachHost betreibt seine derzeitige Hosting-Infrastruktur in Deutschland.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">♧</div>
+          <h3>Community</h3>
+          <p>Bei Fragen kannst du dich über unseren Discord oder per E-Mail an das DachHost-Team wenden.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">↗</div>
+          <h3>Einfach loslegen</h3>
+          <p>Account erstellen, passende Vorlage auswählen und dein Serverprojekt im Panel einrichten.</p>
+        </article>
+      </div>
+      <p class="fine-print">DachHost ist ein wachsendes Projekt. Verfügbare Servertypen, Ressourcen und Funktionen können sich je nach Kapazität ändern. Eine Vorlage ist keine Garantie für die Kompatibilität jeder beliebigen Konfiguration.</p>
+    </section>
+
+    <section class="section section-alt" id="ablauf">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow">IN WENIGEN SCHRITTEN</div><h2>So startest du bei <span class="gradient-text">DachHost.</span></h2></div>
+          <p>Der Weg zu deinem eigenen Serverprojekt – ohne unnötig komplizierte Schritte.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">01</span><h3>Account erstellen</h3><p>Öffne unser Panel und erstelle deinen persönlichen DachHost-Account.</p></article>
+          <article class="step-card"><span class="step-number">02</span><h3>Vorlage auswählen</h3><p>Suche dir eine der im Panel verfügbaren Game- oder Application-Vorlagen aus.</p></article>
+          <article class="step-card"><span class="step-number">03</span><h3>Server einrichten</h3><p>Vergib einen Namen und passe die verfügbaren Einstellungen an.</p></article>
+          <article class="step-card"><span class="step-number">04</span><h3>Loslegen</h3><p>Verwalte deinen Server über das Panel und starte dein eigenes Projekt.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="angebote">
+      <div class="section-heading">
+        <div><div class="eyebrow">ENTDECKE DIE PLATTFORM</div><h2>Alles an einem <span class="gradient-text">Ort.</span></h2></div>
+        <p>Die wichtigsten Anlaufstellen für deinen Start bei DachHost.</p>
+      </div>
+      <div class="offer-grid">
+        <article class="offer-card featured">
+          <small>01 / GAME HOSTING</small><h3>Game-Server</h3>
+          <p>Erstelle deinen eigenen Gameserver und spiele gemeinsam mit Freunden. Die verfügbaren Server-Vorlagen findest du in unserem Panel.</p>
+          <ul><li>Verschiedene Games und Servertypen</li><li>Mods und Plugins – abhängig von der Software</li><li>Verwaltung über das Pelican Panel</li></ul>
+          <a href="https://panel.dachhost.com">Server erstellen <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="offer-card">
+          <small>02 / CONTROL</small><h3>Pelican Panel</h3>
+          <p>Behalte dein Projekt im Blick und verwalte deine Server zentral über eine übersichtliche Oberfläche.</p>
+          <ul><li>Server starten und stoppen</li><li>Konfiguration und Konsole</li><li>Dateiverwaltung – je nach Berechtigung</li></ul>
+          <a href="https://panel.dachhost.com">Zum Panel <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="offer-card">
+          <small>03 / HELP & SUPPORT</small><h3>Hilfe & Community</h3>
+          <p>Du hast eine Frage oder brauchst Unterstützung? Wir helfen dir über unsere Community und per E-Mail weiter.</p>
+          <ul><li>Support über Discord</li><li>Kontakt per E-Mail</li><li>Dokumentation im Aufbau</li></ul>
+          <a href="docs.html">Dokumentation ansehen <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+      <p class="fine-print">Das Angebot ist aktuell kostenlos und kann im Rahmen der verfügbaren Ressourcen angepasst werden. Verfügbarkeit und Funktionen können je nach Servertyp variieren.</p>
+    </section>
+
+    <section class="section section-alt faq-section" id="faq">
+      <div class="container faq-layout">
+        <div><div class="eyebrow">GUT ZU WISSEN</div><h2>Häufige <span class="gradient-text">Fragen.</span></h2><p class="muted-copy">Du hast noch Fragen? In unserer Dokumentation findest du weitere Informationen. Für persönliche Hilfe erreichst du uns über Discord.</p><a class="text-link" href="docs.html">Zur Dokumentation <span aria-hidden="true">→</span></a></div>
+        <div class="faq-list">
+          <details><summary>Ist DachHost wirklich kostenlos?</summary><p>Ja, der Einstieg ist aktuell kostenlos. Das Angebot kann im Rahmen der verfügbaren Ressourcen angepasst werden.</p></details>
+          <details><summary>Welche Games und Anwendungen werden unterstützt?</summary><p>Im Pelican Panel findest du die aktuell verfügbaren Server-Vorlagen. Die Auswahl kann sich im Laufe der Zeit ändern.</p></details>
+          <details><summary>Wie verwalte ich meinen Server?</summary><p>Die Verwaltung erfolgt über das DachHost-Panel auf Basis von Pelican.</p></details>
+          <details><summary>Wo stehen die Server?</summary><p>Die derzeitige Hosting-Infrastruktur von DachHost befindet sich in Deutschland.</p></details>
+          <details><summary>Wo bekomme ich Hilfe?</summary><p>Du erreichst uns über unseren <a href="https://discord.gg/H95r4yZNXF" target="_blank" rel="noopener noreferrer">Discord-Server</a> oder per <a href="mailto:support@dachhost.com">E-Mail</a>.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <div><div class="eyebrow">BEREIT LOSZULEGEN?</div><h2>Dein nächstes Abenteuer<br><span class="gradient-text">beginnt hier.</span></h2><p>Erstelle deinen Account und entdecke DachHost.</p></div>
+        <a class="button primary" href="https://panel.dachhost.com">Jetzt kostenlos starten <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="logo" href="/">DACH<span>HOST</span><i>.</i></a><p>Dein Server. Deine Welt.<br>Game-Server-Hosting für deine Ideen.</p><a class="footer-discord" href="https://discord.gg/H95r4yZNXF" target="_blank" rel="noopener noreferrer">Community auf Discord <span aria-hidden="true">↗</span></a></div>
+      <div class="footer-links">
+        <div><b>PLATTFORM</b><a href="https://panel.dachhost.com">Panel</a><a href="#angebote">Angebote</a><a href="vorlagen.html">Vorlagen</a><a href="docs.html">Dokumentation</a></div>
+        <div><b>COMMUNITY</b><a href="https://discord.gg/H95r4yZNXF" target="_blank" rel="noopener noreferrer">Discord</a><a href="mailto:support@dachhost.com">Support per E-Mail</a></div>
+        <div><b>INFORMATIONEN</b><a href="legal.html">Impressum & Datenschutz</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 DachHost. Mit Leidenschaft betrieben.</span><span>Made for your next world <i aria-hidden="true">✦</i></span></div>
+  </footer>
+
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const themeButton = document.getElementById('themeToggle');
+      const menuButton = document.getElementById('menuToggle');
+      const nav = document.getElementById('primaryNav');
+
+      themeButton.addEventListener('click', () => {
+        const current = root.dataset.theme || 'auto';
+        const next = current === 'dark' ? 'light' : current === 'light' ? 'auto' : 'dark';
+        root.dataset.theme = next;
+        try {
+          if (next === 'auto') localStorage.removeItem('dachhost-theme');
+          else localStorage.setItem('dachhost-theme', next);
+        } catch (_) {}
+      });
+
+      menuButton.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        menuButton.setAttribute('aria-expanded', String(isOpen));
+        menuButton.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
+      });
+
+      nav.addEventListener('click', event => {
+        if (event.target.closest('a') && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          menuButton.setAttribute('aria-expanded', 'false');
+          menuButton.setAttribute('aria-label', 'Menü öffnen');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

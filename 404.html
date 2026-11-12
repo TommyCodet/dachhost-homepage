@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="de" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="robots" content="noindex, follow">
+  <title>Seite nicht gefunden – DachHost</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('dachhost-theme');
+        document.documentElement.dataset.theme = saved === 'light' || saved === 'dark' ? saved : 'auto';
+      } catch (_) {}
+    })();
+  </script>
+</head>
+<body>
+  <main class="container content-page" style="display:grid;place-items:center;text-align:center">
+    <div>
+      <div class="eyebrow">FEHLER 404</div>
+      <h1>Diese Seite ist<br><span class="gradient-text">nicht verfügbar.</span></h1>
+      <p class="catalog-intro">Der Link ist möglicherweise veraltet oder die Seite wurde verschoben.</p>
+      <div class="actions" style="justify-content:center">
+        <a class="button primary" href="/">Zur Startseite <span aria-hidden="true">→</span></a>
+        <a class="button secondary" href="https://discord.gg/H95r4yZNXF">Discord-Support</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
