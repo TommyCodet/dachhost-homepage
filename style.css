@@ -342,3 +342,31 @@ h1 { font-size: clamp(54px, 6.5vw, 82px); letter-spacing: -5px; line-height: .99
   .nav-tools { margin-left: auto; }
   .menu-toggle { display: inline-flex; }
 }
+
+
+/* Roadmap page */
+.roadmap-intro { max-width: 760px; color: var(--muted); font-size: 15px; line-height: 1.9; }
+.roadmap-notice { margin-top: 22px; }
+.roadmap-section { margin-top: 54px; }
+.roadmap-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.roadmap-section-heading h2 { margin: 8px 0 0; font-size: clamp(25px, 4vw, 34px); letter-spacing: -1px; }
+.roadmap-count { color: var(--muted); font-size: 11px; }
+.roadmap-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.roadmap-card { min-width: 0; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.roadmap-card-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 18px; }
+.roadmap-icon { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: #ff762b16; color: var(--orange); font-size: 19px; }
+.roadmap-status { padding: 5px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: 10px; font-weight: 800; white-space: nowrap; }
+.status-review { border-color: #ff762b55; color: var(--orange); }
+.status-idea { background: var(--surface-2); }
+.roadmap-card h3 { margin: 0 0 9px; font-size: 17px; letter-spacing: -.3px; }
+.roadmap-card p { min-height: 92px; margin: 0; color: var(--muted); font-size: 12px; line-height: 1.85; }
+.roadmap-meta { margin-top: 17px; padding-top: 13px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; }
+.roadmap-feedback { margin-top: 34px; }
+.roadmap-feedback h2 { margin-top: 0; }
+.roadmap-feedback .actions { margin-top: 18px; }
+@media (max-width: 900px) { .roadmap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) {
+  .roadmap-grid { grid-template-columns: 1fr; }
+  .roadmap-card p { min-height: 0; }
+  .roadmap-section-heading { align-items: start; flex-direction: column; }
+}
