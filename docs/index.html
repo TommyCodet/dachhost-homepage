@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="de" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Hilfe und Dokumentation für DachHost: Erfahre, wie du deinen Game-Server erstellst und über das Pelican Panel verwaltest.">
+  <meta property="og:title" content="Dokumentation – DachHost">
+  <meta property="og:description" content="Anleitungen und Hilfe rund um deinen DachHost-Server.">
+  <title>Dokumentation – DachHost</title>
+  <link rel="canonical" href="https://www.dachhost.com/docs/">
+  <link rel="stylesheet" href="/style.css">
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('dachhost-theme');
+        document.documentElement.dataset.theme = saved === 'light' || saved === 'dark' ? saved : 'auto';
+      } catch (_) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/" aria-label="DachHost Startseite">DACH<span>HOST</span><i>.</i></a>
+      <nav id="primaryNav" aria-label="Hauptnavigation">
+        <a href="/">Start</a><a href="/#vorteile">Vorteile</a><a href="/vorlagen/">Vorlagen</a><a href="/docs/" aria-current="page">Dokumentation</a><a href="/roadmap/">Roadmap</a>
+        <a class="nav-cta" href="https://panel.dachhost.com">Zum Panel <span aria-hidden="true">↗</span></a>
+      <a href="/status/">Status</a></nav>
+      <div class="nav-tools">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Farbschema wechseln" title="Farbschema wechseln">◐</button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menü öffnen" aria-controls="primaryNav" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="container content-page">
+    <div class="eyebrow">HILFE & INFORMATIONEN</div>
+    <h1>Dokumentation<span class="gradient-text">.</span></h1>
+    <div class="content-panel">
+      <h2>Willkommen bei DachHost</h2>
+      <p>In dieser Dokumentation findest du die ersten Schritte und praktische Hinweise zur Verwaltung deines Servers über das Pelican Panel.</p>
+      <div class="notice"><strong>Hinweis:</strong> Die Oberfläche und verfügbaren Funktionen können je nach Server-Vorlage und Berechtigungen variieren. Die aktuell verfügbaren Vorlagen werden direkt im Panel angezeigt.</div>
+      <h2>1. Ressourcen und Serverdaten verstehen</h2>
+      <p>Im kostenlosen DachHost-Freeplan stehen standardmäßig 3 GB RAM zur Verfügung. Im Rahmen einer individuell vereinbarten Werbekooperation kann die RAM-Zuteilung – abhängig von Bedarf, Reichweite und Werbeleistung – auf bis zu 16 GB erhöht werden. Die CPU-Zuteilung liegt je nach Server zwischen 100 und 600 %. Die Infrastruktur basiert auf dedizierten Servern mit AMD-Ryzen-9-Prozessoren.</p>
+      <p>Eine eigene IPv4-Adresse ist in den meisten Fällen möglich, hängt aber von der Verfügbarkeit ab. Ports werden ebenfalls je nach Verfügbarkeit zugeteilt. Subdomains befinden sich aktuell in Wartung. Eine Übersicht findest du auf der Seite <a href="/specs/">Technische Specs</a> sowie unter <a href="/info/">Server-Informationen</a>.</p>
+      <div class="notice"><strong>Wichtig:</strong> Der Freeplan ist dauerhaft kostenlos und ohne verpflichtende Werbung nutzbar. Zusätzliche Ressourcen durch Werbung gibt es ausschließlich über eine persönlich vereinbarte Kooperation mit DachHost.</div>
+      <h2>2. Deinen ersten Server erstellen</h2>
+      <ol>
+        <li>Melde dich im <a href="https://panel.dachhost.com">DachHost-Panel</a> an.</li>
+        <li>Öffne den Bereich zur Servererstellung, sofern er für deinen Account freigeschaltet ist.</li>
+        <li>Wähle eine verfügbare Server-Vorlage aus und lies die angezeigten Hinweise.</li>
+        <li>Trage die erforderlichen Angaben ein und prüfe die Ressourcen- und Portvorgaben.</li>
+        <li>Schließe die Erstellung ab und öffne anschließend die Server-Konsole.</li>
+      </ol>
+      <h2>3. Deinen Server verwalten</h2>
+      <h3>Starten, stoppen und neu starten</h3>
+      <p>Nutze die entsprechenden Aktionen im Panel. Warte nach dem Start, bis die Konsole den erfolgreichen Start meldet. Beende Prozesse möglichst über die Panel-Aktion statt den Server hart abzubrechen.</p>
+      <h3>Konsole und Logs</h3>
+      <p>Die Konsole zeigt Ausgaben und Fehlermeldungen des Serverprozesses. Wenn ein Start fehlschlägt, kopiere die letzten relevanten Zeilen für eine Support-Anfrage – aber veröffentliche keine Passwörter, Tokens oder privaten Zugangsdaten.</p>
+      <h3>Dateien und Konfiguration</h3>
+      <p>Ändere Konfigurationsdateien nur, wenn du weißt, welche Einstellung du anpassen möchtest. Erstelle vor größeren Änderungen eine Sicherung, sofern dir eine Backup-Funktion zur Verfügung steht.</p>
+      <h2>4. Backups erstellen und nutzen</h2>
+      <p>DachHost unterstützt automatische und manuelle Backups. Nutze die Backup-Funktionen im Panel, bevor du größere Änderungen an Konfigurationen, Mods oder Plugins vornimmst. Prüfe nach einer Sicherung, ob sie im Panel korrekt angezeigt wird. Welche Wiederherstellungsoptionen verfügbar sind, richtet sich nach der Serverkonfiguration.</p>
+      <h2>5. Häufige Probleme</h2>
+      <h3>Der Server startet nicht</h3>
+      <ul>
+        <li>Prüfe die letzten Zeilen in der Konsole.</li>
+        <li>Kontrolliere, ob erforderliche Einstellungen und Startparameter gesetzt sind.</li>
+        <li>Prüfe, ob die verwendete Vorlage und die ausgewählte Software zusammenpassen.</li>
+        <li>Wenn der Fehler bleibt, sende dem Support die Fehlermeldung und den Servertyp.</li>
+      </ul>
+      <h3>Der Server ist nicht erreichbar</h3>
+      <ul>
+        <li>Prüfe im Panel, ob der Server tatsächlich läuft.</li>
+        <li>Kontrolliere die angezeigte Adresse und den Port.</li>
+        <li>Beachte, dass einzelne Spiele zusätzliche Ports oder Protokolle benötigen können.</li>
+      </ul>
+      <h2>6. Vorlagen finden</h2>
+      <p>Die aktuelle Auswahl an Game- und Application-Vorlagen findest du im Panel. Unsere <a href="/vorlagen/">Vorlagen-Übersicht</a> erklärt, wie du die passende Vorlage findest. Wir zeigen bewusst keine vollständige Liste auf der Website, solange sie nicht automatisch mit dem tatsächlichen Angebot abgeglichen wird.</p>
+      <h2>Weitere Informationen</h2>
+      <ul>
+        <li><a href="/server/freeplan/">Freeplan und enthaltene Ressourcen</a></li>
+        <li><a href="/specs/">Technische Spezifikationen</a></li>
+        <li><a href="/info/">Server-, Netzwerk- und Hardware-Informationen</a></li>
+      </ul>
+      <h2>Du brauchst Hilfe?</h2>
+      <p>Besuche unseren <a href="https://discord.gg/H95r4yZNXF" target="_blank" rel="noopener noreferrer">DachHost Discord</a> oder schreibe an <a href="mailto:support@dachhost.com">support@dachhost.com</a>.</p>
+      <p><a href="https://panel.dachhost.com">Zum DachHost-Panel →</a></p>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-bottom"><span>© 2026 DachHost</span><a href="/legal/">Impressum & Datenschutz</a></div>
+  </footer>
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const themeButton = document.getElementById('themeToggle');
+      const menuButton = document.getElementById('menuToggle');
+      const nav = document.getElementById('primaryNav');
+      themeButton.addEventListener('click', () => {
+        const current = root.dataset.theme || 'auto';
+        const next = current === 'dark' ? 'light' : current === 'light' ? 'auto' : 'dark';
+        root.dataset.theme = next;
+        try {
+          if (next === 'auto') localStorage.removeItem('dachhost-theme');
+          else localStorage.setItem('dachhost-theme', next);
+        } catch (_) {}
+      });
+      menuButton.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        menuButton.setAttribute('aria-expanded', String(isOpen));
+        menuButton.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
+      });
+      nav.addEventListener('click', event => {
+        if (event.target.closest('a') && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          menuButton.setAttribute('aria-expanded', 'false');
+          menuButton.setAttribute('aria-label', 'Menü öffnen');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
