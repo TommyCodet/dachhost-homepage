@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.dachhost.com/</loc></url>
-  <url><loc>https://www.dachhost.com/vorlagen.html</loc></url>
-  <url><loc>https://www.dachhost.com/docs.html</loc></url>
-  <url><loc>https://www.dachhost.com/roadmap.html</loc></url>
-  <url><loc>https://www.dachhost.com/legal.html</loc></url>
+  <url><loc>https://www.dachhost.com/vorlagen/</loc></url>
+  <url><loc>https://www.dachhost.com/docs/</loc></url>
+  <url><loc>https://www.dachhost.com/roadmap/</loc></url>
+  <url><loc>https://www.dachhost.com/legal/</loc></url>
+  <url><loc>https://www.dachhost.com/status/</loc></url>
+  <url><loc>https://www.dachhost.com/specs/</loc></url>
+  <url><loc>https://www.dachhost.com/info/</loc></url>
+  <url><loc>https://www.dachhost.com/server/freeplan/</loc></url>
 </urlset>
