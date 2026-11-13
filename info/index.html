@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="de" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Informationen zur DachHost-Serverinfrastruktur, dedizierter Ryzen-9-Hardware, Pelican Panel, Netzwerk und Betrieb.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DachHost">
+  <meta property="og:title" content="Server-Informationen – DachHost">
+  <meta property="og:description" content="Informationen zur DachHost-Serverinfrastruktur, dedizierter Ryzen-9-Hardware, Pelican Panel, Netzwerk und Betrieb.">
+  <meta property="og:url" content="https://www.dachhost.com/info/">
+  <title>Server-Informationen – DachHost</title>
+  <link rel="canonical" href="https://www.dachhost.com/info/">
+  <link rel="stylesheet" href="/style.css">
+  <script>
+    (() => { try {
+      const saved = localStorage.getItem('dachhost-theme');
+      document.documentElement.dataset.theme = saved === 'light' || saved === 'dark' ? saved : 'auto';
+    } catch (_) {} })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/" aria-label="DachHost Startseite">DACH<span>HOST</span><i>.</i></a>
+      <nav id="primaryNav" aria-label="Hauptnavigation">
+        <a href="/">Start</a>
+        <a href="/server/freeplan/">Freeplan</a>
+        <a href="/info/">Server-Info</a>
+        <a href="/specs/">Specs</a>
+        <a href="/vorlagen.html">Vorlagen</a>
+        <a class="nav-cta" href="https://panel.dachhost.com">Zum Panel <span aria-hidden="true">↗</span></a>
+      </nav>
+      <div class="nav-tools">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Farbschema wechseln" title="Farbschema wechseln">◐</button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menü öffnen" aria-controls="primaryNav" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="container content-page">
+    <div class="eyebrow">INFRASTRUKTUR & BETRIEB</div>
+    <h1>Server-Informationen<span class="gradient-text">.</span></h1>
+    <p class="catalog-intro">DachHost stellt Ressourcen für Gameserver, Voice-Dienste und eigene Projekte bereit. Die Serververwaltung läuft zentral über das Pelican Panel.</p>
+    <div class="content-panel">
+      <h2>Dedizierte Server auf Ryzen-9-Basis</h2>
+      <p>Die DachHost-Infrastruktur setzt auf dedizierte Serversysteme mit AMD-Ryzen-9-Prozessoren. Es kommen nach aktuellem Stand keine Xeon-Systeme zum Einsatz. Die konkrete Ressourcenzuteilung hängt vom jeweiligen Angebot ab.</p>
+      <h2>Netzwerk und Erreichbarkeit</h2>
+      <ul>
+        <li><strong>IPv4-Adressen:</strong> In den meisten Fällen wird eine eigene IPv4-Adresse bereitgestellt. Das ist von der verfügbaren Kapazität abhängig und daher nicht pauschal für jeden Server garantiert.</li>
+        <li><strong>Ports:</strong> Je nach Verfügbarkeit werden passende Ports zugeteilt. Häufige Beispiele sind 25565 (z. B. Minecraft Java) und 19132 (z. B. Minecraft Bedrock); die tatsächlich benötigten Ports hängen von der Anwendung ab.</li>
+        <li><strong>Subdomains:</strong> Die Subdomain-Funktion ist vorgesehen, befindet sich derzeit jedoch in Wartung und ist aktuell nicht als verfügbarer Dienst zu verstehen.</li>
+      </ul>
+      <h2>Serververwaltung mit Pelican</h2>
+      <p>Über das Pelican Panel verwaltest du deinen Server an einem zentralen Ort. Dazu gehören die Konsole, die Dateiverwaltung sowie Start-, Stopp- und Neustartfunktionen. Je nach Server-Software lassen sich außerdem Mods und Plugins einsetzen.</p>
+      <h2>Backups</h2>
+      <p>Für Server sind sowohl manuelle als auch automatische Backups vorgesehen. Welche Optionen und Abläufe im Panel sichtbar sind, kann von der jeweiligen Serverkonfiguration abhängen.</p>
+      <h2>24/7-Betrieb und Priorität</h2>
+      <p>Der Freeplan ist auf einen durchgehenden Betrieb rund um die Uhr ausgelegt. Free-Nutzer haben untereinander dieselbe Priorität. Eine unterbrechungsfreie Verfügbarkeit oder ein SLA wird damit nicht zugesichert; Wartungsarbeiten und technische Störungen können vorkommen.</p>
+      <h2>Wartung und Status</h2>
+      <p>Einzelne Funktionen – darunter die Subdomain-Bereitstellung – können sich in Wartung befinden. Maßgeblich sind die aktuellen Hinweise im Panel und auf den offiziellen DachHost-Kanälen.</p>
+      <div class="notice"><strong>Hinweis:</strong> IP-Adressen, Ports und verfügbare Ressourcen können von der technischen Verfügbarkeit und der konkreten Serverkonfiguration abhängen.</div>
+      <div class="actions"><a class="button primary" href="/specs/">Technische Specs ansehen →</a><a class="button secondary" href="/server/freeplan/">Zum Freeplan</a></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="logo" href="/">DACH<span>HOST</span><i>.</i></a>
+        <p>Dein Server. Deine Welt.<br>Hosting für Games und eigene Projekte.</p>
+        <a class="footer-discord" href="https://discord.gg/H95r4yZNXF" target="_blank" rel="noopener noreferrer">Community auf Discord ↗</a>
+      </div>
+      <div class="footer-links">
+        <div><b>HOSTING</b><a href="/server/freeplan/">Freeplan</a><a href="/info/">Server-Informationen</a><a href="/specs/">Technische Specs</a></div>
+        <div><b>HILFE</b><a href="/docs.html">Dokumentation</a><a href="/vorlagen.html">Vorlagen</a><a href="mailto:support@dachhost.com">Support per E-Mail</a></div>
+        <div><b>INFORMATIONEN</b><a href="/legal.html">Impressum & Datenschutz</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 DachHost</span><span>Made for your next world <i aria-hidden="true">✦</i></span></div>
+  </footer>
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const themeButton = document.getElementById('themeToggle');
+      const menuButton = document.getElementById('menuToggle');
+      const nav = document.getElementById('primaryNav');
+      themeButton.addEventListener('click', () => {
+        const current = root.dataset.theme || 'auto';
+        const next = current === 'dark' ? 'light' : current === 'light' ? 'auto' : 'dark';
+        root.dataset.theme = next;
+        try {
+          if (next === 'auto') localStorage.removeItem('dachhost-theme');
+          else localStorage.setItem('dachhost-theme', next);
+        } catch (_) {}
+      });
+      menuButton.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        menuButton.setAttribute('aria-expanded', String(isOpen));
+        menuButton.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
+      });
+      nav.addEventListener('click', event => {
+        if (event.target.closest('a') && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          menuButton.setAttribute('aria-expanded', 'false');
+          menuButton.setAttribute('aria-label', 'Menü öffnen');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
