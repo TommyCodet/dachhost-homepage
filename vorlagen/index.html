@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="de" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Finde die passende Game- oder Application-Vorlage für dein Projekt bei DachHost.">
+  <meta property="og:title" content="Vorlagen entdecken – DachHost">
+  <meta property="og:description" content="So findest du verfügbare Game- und Application-Vorlagen im DachHost-Panel.">
+  <title>Vorlagen entdecken – DachHost</title>
+  <link rel="canonical" href="https://www.dachhost.com/vorlagen/">
+  <link rel="stylesheet" href="/style.css">
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('dachhost-theme');
+        document.documentElement.dataset.theme = saved === 'light' || saved === 'dark' ? saved : 'auto';
+      } catch (_) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/" aria-label="DachHost Startseite">DACH<span>HOST</span><i>.</i></a>
+      <nav id="primaryNav" aria-label="Hauptnavigation">
+        <a href="/">Start</a><a href="/#vorteile">Vorteile</a><a href="/vorlagen/" aria-current="page">Vorlagen</a><a href="/docs/">Dokumentation</a><a href="/roadmap/">Roadmap</a>
+        <a class="nav-cta" href="https://panel.dachhost.com">Zum Panel <span aria-hidden="true">↗</span></a>
+      <a href="/status/">Status</a></nav>
+      <div class="nav-tools">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Farbschema wechseln" title="Farbschema wechseln">◐</button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menü öffnen" aria-controls="primaryNav" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="container content-page">
+    <div class="eyebrow">FINDE DEIN NÄCHSTES PROJEKT</div>
+    <h1>Vorlagen entdecken<span class="gradient-text">.</span></h1>
+    <p class="catalog-intro">DachHost nutzt das Pelican Panel und stellt darüber Game- und Application-Vorlagen bereit. Welche Vorlagen du tatsächlich auswählen kannst, siehst du direkt im Panel – dort ist die Liste aktuell und maßgeblich.</p>
+    <div class="notice"><strong>Warum keine feste Spieleliste?</strong> Die verfügbaren Eggs können sich ändern und einzelne Vorlagen können je nach Node, Ressourcen oder Freigabe nicht immer auswählbar sein. Wir möchten dir keine Spiele versprechen, die du gerade nicht erstellen kannst.</div>
+    <div class="catalog-tools">
+      <label class="catalog-search-label" for="catalogSearch">Kategorien durchsuchen</label>
+      <input class="catalog-search" id="catalogSearch" type="search" placeholder="Zum Beispiel: Game, Voice, Apps …" autocomplete="off">
+      <div class="catalog-filters" role="group" aria-label="Kategorien filtern">
+        <button class="catalog-filter active" type="button" data-filter="all" aria-pressed="true">Alle</button>
+        <button class="catalog-filter" type="button" data-filter="games" aria-pressed="false">Games</button>
+        <button class="catalog-filter" type="button" data-filter="voice" aria-pressed="false">Voice</button>
+        <button class="catalog-filter" type="button" data-filter="apps" aria-pressed="false">Apps</button>
+        <button class="catalog-filter" type="button" data-filter="config" aria-pressed="false">Konfiguration</button>
+      </div>
+    </div>
+    <p class="catalog-result" id="catalogResult" aria-live="polite">4 Kategorien</p>
+    <noscript><p class="notice">Die Suche und Filter benötigen JavaScript. Alle vier Kategorien sind auch ohne JavaScript sichtbar.</p></noscript>
+    <div class="catalog-grid" id="catalogGrid">
+      <article class="catalog-card" data-category="games" data-search="game games multiplayer dedicated server minecraft survival"><div class="feature-icon" aria-hidden="true">▣</div><h2>Game-Server</h2><p>Finde Vorlagen für Multiplayer- und Dedicated-Server. Achte bei der Auswahl auf die angezeigten Anforderungen und Startparameter.</p></article>
+      <article class="catalog-card" data-category="voice" data-search="voice kommunikation teamspeak mumble"><div class="feature-icon" aria-hidden="true">◉</div><h2>Voice & Kommunikation</h2><p>Prüfe im Panel, ob passende Voice- oder Kommunikationsserver für deinen Anwendungsfall bereitstehen.</p></article>
+      <article class="catalog-card" data-category="apps" data-search="apps application services anwendungen dienste"><div class="feature-icon" aria-hidden="true">⌘</div><h2>Apps & Services</h2><p>Je nach Angebot können auch allgemeine Anwendungen und Dienste als Vorlage verfügbar sein.</p></article>
+      <article class="catalog-card" data-category="config" data-search="konfiguration variablen ports installation einstellungen"><div class="feature-icon" aria-hidden="true">⚙</div><h2>Eigene Konfiguration</h2><p>Die jeweilige Vorlage legt fest, welche Variablen, Ports und Installationsoptionen du konfigurieren kannst.</p></article>
+    </div>
+    <p class="catalog-empty" id="catalogEmpty" hidden>Keine passende Kategorie gefunden. Versuche einen anderen Suchbegriff.</p>
+    <section class="content-panel" style="margin-top:22px">
+      <h2>So findest du eine Vorlage</h2>
+      <div class="catalog-steps">
+        <div class="catalog-step"><b>01 / PANEL ÖFFNEN</b><span>Melde dich bei DachHost an und gehe zur Servererstellung.</span></div>
+        <div class="catalog-step"><b>02 / SUCHEN</b><span>Nutze die Vorlagen-Auswahl und suche nach dem Namen deiner gewünschten Software.</span></div>
+        <div class="catalog-step"><b>03 / ANFORDERUNGEN PRÜFEN</b><span>Lies die Beschreibung und prüfe Ressourcen, Ports und Einstellungen vor dem Erstellen.</span></div>
+      </div>
+      <div class="actions"><a class="button primary" href="https://panel.dachhost.com">Verfügbare Vorlagen im Panel ansehen <span aria-hidden="true">→</span></a><a class="button secondary" href="/docs/">Zur Dokumentation</a></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-bottom"><span>© 2026 DachHost</span><a href="/legal/">Impressum & Datenschutz</a></div>
+  </footer>
+  <script>
+    (() => {
+      const search = document.getElementById('catalogSearch');
+      const cards = [...document.querySelectorAll('.catalog-card')];
+      const filters = [...document.querySelectorAll('.catalog-filter')];
+      const result = document.getElementById('catalogResult');
+      const empty = document.getElementById('catalogEmpty');
+      let activeFilter = 'all';
+      const updateCatalog = () => {
+        const term = search.value.trim().toLocaleLowerCase('de');
+        let visible = 0;
+        cards.forEach(card => {
+          const matchesTerm = card.dataset.search.includes(term);
+          const matchesFilter = activeFilter === 'all' || card.dataset.category === activeFilter;
+          const show = matchesTerm && matchesFilter;
+          card.hidden = !show;
+          if (show) visible++;
+        });
+        result.textContent = visible + (visible === 1 ? ' Kategorie' : ' Kategorien');
+        empty.hidden = visible !== 0;
+      };
+      search.addEventListener('input', updateCatalog);
+      filters.forEach(button => button.addEventListener('click', () => {
+        activeFilter = button.dataset.filter;
+        filters.forEach(item => {
+          const selected = item === button;
+          item.classList.toggle('active', selected);
+          item.setAttribute('aria-pressed', String(selected));
+        });
+        updateCatalog();
+      }));
+
+      const root = document.documentElement;
+      const themeButton = document.getElementById('themeToggle');
+      const menuButton = document.getElementById('menuToggle');
+      const nav = document.getElementById('primaryNav');
+      themeButton.addEventListener('click', () => {
+        const current = root.dataset.theme || 'auto';
+        const next = current === 'dark' ? 'light' : current === 'light' ? 'auto' : 'dark';
+        root.dataset.theme = next;
+        try {
+          if (next === 'auto') localStorage.removeItem('dachhost-theme');
+          else localStorage.setItem('dachhost-theme', next);
+        } catch (_) {}
+      });
+      menuButton.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        menuButton.setAttribute('aria-expanded', String(isOpen));
+        menuButton.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
+      });
+      nav.addEventListener('click', event => {
+        if (event.target.closest('a') && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          menuButton.setAttribute('aria-expanded', 'false');
+          menuButton.setAttribute('aria-label', 'Menü öffnen');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
