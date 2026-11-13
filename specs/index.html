@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="de" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Technische Grundlagen von DachHost: Ryzen-9-basierte dedizierte Server, Freeplan-Ressourcen, Netzwerk und Verwaltung.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DachHost">
+  <meta property="og:title" content="Technische Specs – DachHost">
+  <meta property="og:description" content="Technische Grundlagen von DachHost: Ryzen-9-basierte dedizierte Server, Freeplan-Ressourcen, Netzwerk und Verwaltung.">
+  <meta property="og:url" content="https://www.dachhost.com/specs/">
+  <title>Technische Specs – DachHost</title>
+  <link rel="canonical" href="https://www.dachhost.com/specs/">
+  <link rel="stylesheet" href="/style.css">
+  <script>
+    (() => { try {
+      const saved = localStorage.getItem('dachhost-theme');
+      document.documentElement.dataset.theme = saved === 'light' || saved === 'dark' ? saved : 'auto';
+    } catch (_) {} })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="/" aria-label="DachHost Startseite">DACH<span>HOST</span><i>.</i></a>
+      <nav id="primaryNav" aria-label="Hauptnavigation">
+        <a href="/">Start</a>
+        <a href="/server/freeplan/">Freeplan</a>
+        <a href="/info/">Server-Info</a>
+        <a href="/specs/">Specs</a>
+        <a href="/vorlagen.html">Vorlagen</a>
+        <a class="nav-cta" href="https://panel.dachhost.com">Zum Panel <span aria-hidden="true">↗</span></a>
+      </nav>
+      <div class="nav-tools">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Farbschema wechseln" title="Farbschema wechseln">◐</button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menü öffnen" aria-controls="primaryNav" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="container content-page">
+    <div class="eyebrow">HARDWARE · RESSOURCEN · NETZWERK</div>
+    <h1>Technische Specs<span class="gradient-text">.</span></h1>
+    <p class="catalog-intro">Hier findest du die derzeit bestätigten technischen Eckdaten der DachHost-Infrastruktur. Die konkrete Zuteilung kann je nach Tarif, Servertyp und Verfügbarkeit variieren.</p>
+    <div class="notice"><strong>Transparenz:</strong> Wir veröffentlichen nur Werte, die aktuell feststehen. Exakte CPU-Modellnummern, RAM-Typen, Datenträgergenerationen und garantierte Netzwerkdurchsätze sind derzeit nicht näher spezifiziert.</div>
+    <div class="content-panel">
+      <h2>Server-Hardware</h2>
+      <ul>
+        <li><strong>Prozessorplattform:</strong> AMD Ryzen 9</li>
+        <li><strong>Systeme:</strong> dedizierte Server, keine Intel-Xeon-Systeme</li>
+        <li><strong>Ressourcenzuteilung:</strong> abhängig vom gewählten Plan und der verfügbaren Kapazität</li>
+      </ul>
+      <h2>Freeplan – Ressourcen</h2>
+      <div class="catalog-grid">
+        <article class="catalog-card"><div class="feature-icon" aria-hidden="true">▤</div><h2>3 GB RAM</h2><p>Standard-RAM im kostenlosen Freeplan. Durch eine Werbekooperation kann eine höhere Zuteilung vereinbart werden.</p></article>
+        <article class="catalog-card"><div class="feature-icon" aria-hidden="true">⌁</div><h2>Bis zu 16 GB RAM</h2><p>Zusätzlicher RAM ist im Rahmen einer individuellen Kooperation mit DachHost möglich.</p></article>
+        <article class="catalog-card"><div class="feature-icon" aria-hidden="true">◴</div><h2>100–600 % CPU</h2><p>Die angegebene CPU-Leistung richtet sich nach der jeweiligen Ressourcenzuteilung.</p></article>
+        <article class="catalog-card"><div class="feature-icon" aria-hidden="true">▦</div><h2>Kein festes Speicherlimit</h2><p>Für den Freeplan ist nach aktuellem Angebotsstand kein festes Speicherlimit pro Server vorgesehen.</p></article>
+      </div>
+      <h2>Netzwerk</h2>
+      <ul>
+        <li><strong>IPv4:</strong> Eine eigene IPv4-Adresse ist in den meisten Fällen vorgesehen; die Zuteilung hängt von der Verfügbarkeit ab.</li>
+        <li><strong>Ports:</strong> Ports werden je nach Verfügbarkeit zugeteilt. Beispiele sind 25565 und 19132.</li>
+        <li><strong>Subdomains:</strong> Subdomains sind vorgesehen, der Dienst befindet sich aktuell in Wartung.</li>
+      </ul>
+      <h2>Verwaltung und Funktionen</h2>
+      <ul>
+        <li>Verwaltung über das Pelican Panel</li>
+        <li>Konsole und Dateimanager</li>
+        <li>Server starten, stoppen und neu starten</li>
+        <li>Mods und Plugins, soweit die jeweilige Software sie unterstützt</li>
+        <li>Manuelle und automatische Backups</li>
+        <li>Unterstützung von Gameservern, Voice-Servern, Bots, Webservern, Datenbanken und eigenen Projekten, sofern technisch unterstützt</li>
+      </ul>
+      <h2>Weitere technische Angaben</h2>
+      <p>Konkrete CPU-Modelle, Taktfrequenzen, RAM-Generation, Datenträgerdetails, Uplink-Geschwindigkeit und DDoS-Schutzwerte sind auf dieser Seite bewusst nicht als feste Spezifikation angegeben. Sobald diese Werte verbindlich feststehen, kann die Übersicht ergänzt werden.</p>
+      <div class="actions"><a class="button primary" href="/server/freeplan/">Freeplan ansehen →</a><a class="button secondary" href="/info/">Mehr über die Server</a></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="logo" href="/">DACH<span>HOST</span><i>.</i></a>
+        <p>Dein Server. Deine Welt.<br>Hosting für Games und eigene Projekte.</p>
+        <a class="footer-discord" href="https://discord.gg/H95r4yZNXF" target="_blank" rel="noopener noreferrer">Community auf Discord ↗</a>
+      </div>
+      <div class="footer-links">
+        <div><b>HOSTING</b><a href="/server/freeplan/">Freeplan</a><a href="/info/">Server-Informationen</a><a href="/specs/">Technische Specs</a></div>
+        <div><b>HILFE</b><a href="/docs.html">Dokumentation</a><a href="/vorlagen.html">Vorlagen</a><a href="mailto:support@dachhost.com">Support per E-Mail</a></div>
+        <div><b>INFORMATIONEN</b><a href="/legal.html">Impressum & Datenschutz</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 DachHost</span><span>Made for your next world <i aria-hidden="true">✦</i></span></div>
+  </footer>
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const themeButton = document.getElementById('themeToggle');
+      const menuButton = document.getElementById('menuToggle');
+      const nav = document.getElementById('primaryNav');
+      themeButton.addEventListener('click', () => {
+        const current = root.dataset.theme || 'auto';
+        const next = current === 'dark' ? 'light' : current === 'light' ? 'auto' : 'dark';
+        root.dataset.theme = next;
+        try {
+          if (next === 'auto') localStorage.removeItem('dachhost-theme');
+          else localStorage.setItem('dachhost-theme', next);
+        } catch (_) {}
+      });
+      menuButton.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        menuButton.setAttribute('aria-expanded', String(isOpen));
+        menuButton.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
+      });
+      nav.addEventListener('click', event => {
+        if (event.target.closest('a') && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          menuButton.setAttribute('aria-expanded', 'false');
+          menuButton.setAttribute('aria-label', 'Menü öffnen');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
